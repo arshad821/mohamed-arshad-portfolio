@@ -11,7 +11,7 @@ export interface ExperienceEntry {
 // Content taken from the resume. Keep wording factual; update here, not in components.
 export const experience: ExperienceEntry[] = [
   {
-    company: 'Sharjah Airport International Free Zone (SAIF Zone)',
+    company: 'Government of Sharjah (SAIF Zone)',
     role: 'Quality Assurance Engineer',
     period: 'May 2026 \u2013 Present',
     location: 'Sharjah, UAE',
@@ -29,7 +29,7 @@ export const experience: ExperienceEntry[] = [
     role: 'Quality Software Engineer',
     period: 'June 2025 \u2013 May 2026',
     location: 'Trivandrum, India',
-    project: 'Castorama \u2013 Kingfisher Plc',
+    project: 'Castorama \u2013 Kingfisher Plc, UK',
     projectSummary:
       'A native iOS and Android retail e-commerce application supporting end-to-end shopping for DIY, home improvement, and household products, enabling customers to browse products, check availability, and place orders across multiple banners, backed by GraphQL APIs.',
     achievements: [
@@ -61,7 +61,7 @@ export const experience: ExperienceEntry[] = [
     role: 'Test Automation Associate',
     period: 'July 2022 \u2013 December 2024',
     location: 'Coimbatore, India',
-    project: 'Billing \u2013 Aetna, CVS Health',
+    project: 'Billing \u2013 CVS Pharmacy, USA',
     projectSummary:
       'A billing application that simplifies monthly premium payments with an intuitive UI for viewing invoice details through features and interactive charts, enabling users to efficiently manage employee plans, rates, and generate quotes.',
     achievements: [

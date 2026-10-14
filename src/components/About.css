@@ -19,6 +19,7 @@
 }
 
 .about__side {
+  margin-top: -12rem;
   padding-left: clamp(1.25rem, 3vw, 2rem);
   border-left: 3px solid var(--burnt);
 }
@@ -67,5 +68,9 @@
 @media (max-width: 859px) {
   .about {
     grid-template-columns: 1fr;
+  }
+
+  .about__side {
+    margin-top: 0;
   }
 }

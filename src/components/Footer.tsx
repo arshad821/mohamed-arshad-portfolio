@@ -8,7 +8,7 @@ export function Footer() {
         <p>
           &copy; {new Date().getFullYear()} {profile.name}
         </p>
-        <p>Built with React, TypeScript and Vite.</p>
+        <p>Quality Engineer | QA Automation Engineer · Sharjah, UAE</p>
       </div>
     </footer>
   );

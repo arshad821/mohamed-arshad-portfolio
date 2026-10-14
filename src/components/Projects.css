@@ -85,8 +85,8 @@
 }
 
 .project__related {
-  margin-top: auto;
-  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 0;
   font-size: 0.95rem;
   line-height: 1.5;
   color: rgba(244, 235, 218, 0.78);
@@ -119,6 +119,34 @@
   color: var(--orange);
   text-decoration: underline;
   text-underline-offset: 0.25em;
+}
+
+.project__repositories {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line-dark);
+}
+
+.project__repo-label {
+  display: block;
+  margin-bottom: 0.65rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--sand);
+}
+
+.project__repo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.project__repo-links .project__link {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  font-size: 0.9rem;
 }
 
 @media (prefers-reduced-motion: reduce) {

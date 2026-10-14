@@ -33,10 +33,8 @@ export function Hero() {
           </h1>
 
           <p className="hero__roles" style={step(1)}>
-            <span>{profile.titles[0]}</span>
-            <span className="hero__bar" aria-hidden="true" />
-            <span>{profile.titles[1]}</span>
-          </p>
+  <span>{profile.titles[0]}</span>
+</p>
 
           <p className="hero__headline">
             <span className="hero__line" style={step(2)}>
@@ -56,7 +54,7 @@ export function Hero() {
               View Projects
             </a>
             <a className="button button--ghost" href="#contact">
-              Contact Me
+              Let's Connect
             </a>
           </div>
 

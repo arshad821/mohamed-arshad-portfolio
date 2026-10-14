@@ -9,7 +9,7 @@ export function Projects() {
       id="projects"
       title="Featured projects"
       tone="sand"
-      intro="These three areas are placeholders. Full project details and repository links will be added as they are ready."
+      intro=""
     >
       <ul className="projects">
         {projects.map((project) => (
