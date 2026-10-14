@@ -1,0 +1,31 @@
+:root {
+  /* Palette */
+  --charcoal: #171513;
+  --charcoal-raised: #221e1a;
+  --charcoal-deep: #100e0c;
+  --cream: #f4ebda;
+  --cream-deep: #eaddc4;
+  --sand: #dcc8a5;
+  --sand-deep: #c9b186;
+  --burnt: #a8430f;
+  --burnt-deep: #86330a;
+  --orange: #e9803a; /* bright enough for text on charcoal (6.5:1) */
+  --ink: #231e19;
+  --ink-muted: #5a4e42;
+
+  --line-dark: rgba(244, 235, 218, 0.16);
+  --line-light: rgba(35, 30, 25, 0.18);
+
+  /* Type */
+  --font-display: 'Bricolage Grotesque Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-text: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
+
+  /* Layout */
+  --container: 72rem;
+  --gutter: 1.25rem;
+  --header-h: 4.25rem;
+  --section-pad: clamp(4.5rem, 10vw, 8rem);
+
+  --radius-card: 0.5rem;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}

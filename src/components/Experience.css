@@ -1,0 +1,150 @@
+.timeline {
+  display: grid;
+}
+
+.job {
+  position: relative;
+  padding: 0 0 clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 2.75rem);
+  border-left: 1px solid var(--line-dark);
+}
+
+.job:last-child {
+  padding-bottom: 0;
+  border-left-color: transparent;
+}
+
+/* Timeline marker. Warm dot on the line. */
+.job::before {
+  content: '';
+  position: absolute;
+  top: 0.55rem;
+  left: -0.4rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: var(--orange);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px var(--charcoal), 0 0 1.25rem rgba(233, 128, 58, 0.55);
+}
+
+.job:first-child::before {
+  animation: marker-pulse 3.2s ease-in-out infinite;
+}
+
+.job:last-child::before {
+  /* The line stops at the last dot, so keep the dot on the line's x position */
+  left: -0.4rem;
+}
+
+.job article {
+  display: grid;
+  gap: 1.5rem clamp(1.5rem, 4vw, 3.5rem);
+  grid-template-columns: 12.5rem minmax(0, 1fr);
+}
+
+.job__meta {
+  padding-top: 0.2rem;
+  font-family: var(--font-display);
+}
+
+.job__period {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.job__location {
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
+  color: rgba(244, 235, 218, 0.7);
+}
+
+.job__company {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  font-weight: 700;
+  font-stretch: 90%;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+.job__role {
+  margin-top: 0.3rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--sand);
+}
+
+.job__project {
+  margin-top: 1.5rem;
+  padding: 1.1rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: rgba(244, 235, 218, 0.8);
+  background: var(--charcoal-raised);
+  border-left: 3px solid var(--burnt);
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+}
+
+.job__project-name {
+  margin-bottom: 0.4rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--cream);
+}
+
+.job__list {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  max-width: 46rem;
+}
+
+.job__list li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: rgba(244, 235, 218, 0.92);
+}
+
+.job__list li::before {
+  content: '';
+  position: absolute;
+  top: 0.8em;
+  left: 0;
+  width: 0.7rem;
+  height: 2px;
+  background: var(--orange);
+}
+
+@keyframes marker-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 5px var(--charcoal), 0 0 0.75rem rgba(233, 128, 58, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 5px var(--charcoal), 0 0 1.75rem rgba(233, 128, 58, 0.8);
+  }
+}
+
+@media (max-width: 859px) {
+  .job article {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .job__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+
+  .job__location {
+    margin-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .job:first-child::before {
+    animation: none;
+  }
+}
