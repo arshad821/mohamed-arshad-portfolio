@@ -13,7 +13,12 @@ export function Hero() {
     <section id="home" className="hero" aria-labelledby="hero-title">
       <div className="hero__media">
         <picture>
-          <source media="(max-width: 1023px)" srcSet={heroMobile} width="720" height="878" />
+          <source
+            media="(max-width: 1023px)"
+            srcSet={heroMobile}
+            width="720"
+            height="878"
+          />
           <img
             src={heroDesktop}
             width="1600"
@@ -33,8 +38,8 @@ export function Hero() {
           </h1>
 
           <p className="hero__roles" style={step(1)}>
-  <span>{profile.titles[0]}</span>
-</p>
+            <span>{profile.titles[0]}</span>
+          </p>
 
           <p className="hero__headline">
             <span className="hero__line" style={step(2)}>
@@ -53,8 +58,17 @@ export function Hero() {
             <a className="button button--primary" href="#projects">
               View Projects
             </a>
+
             <a className="button button--ghost" href="#contact">
               Let's Connect
+            </a>
+
+            <a
+              className="button button--ghost"
+              href="/resume.pdf"
+              download="Mohamed_Arshad_Resume.pdf"
+            >
+              Download Resume ↓
             </a>
           </div>
 
